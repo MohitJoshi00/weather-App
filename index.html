@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav>
+        <div id="navHead"> Weather App</div>
+    </nav>
+
+    <div id="mainBody">
+
+        <div id="heading">
+            <h1 style="color:white"> <span id="cityName">Search Temprature by City Name</span></h1>
+        </div>
+
+
+        <div id="searchCity">
+            <form>
+                <input type="search" name="search" id="city" placeholder="Enter the city name">
+                <button id="submit" class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                
+            </form>
+            <p id="warningText">write a valid city name in the box</p>
+        </div>
+
+
+        <div id="cardContainer">
+
+            <div id="card" class="card">
+              <div class="cardHeading"> <h2> Temprature</h2></div>
+               <div class="boldDetail"> <span id="temp"></span><span class="gray">&#8451</span></p></div>
+
+                <div class="details">
+                    <ul>
+                        <li>
+                            <b>Temprature = </b><span id="temp2"></span><span class="gray">&#8451</span>
+                        </li>
+                        <li>
+                            <b>Max temp = </b><span id="max_temp"></span><span class="gray">&#8451</span>
+                        </li>
+                        <li>
+                            <b>Min temp = </b><span id="min_temp"></span><span class="gray">&#8451</span>
+                        </li>
+                        <li>
+                            <b>Feels like = </b><span id="feels_like"></span><span class="gray">&#8451</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+              <div class="cardHeading"> <h2> Wind info</h2></div>
+
+               <div class="boldDetail"> <span id="wind_speed"></span> <span class="gray">km/h</span></p></div>
+
+                <div class="details">
+                    <ul>
+                        <li><b>Wind degrees = </b><span id="wind_degrees"></span></li>
+                        <li><b>Wind speed = </b><span id="wind_speed2"></span></li>
+                        <li><b>Cloud pct  = </b><span id="cloud_pct"></span></li>
+                       
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+              <div class="cardHeading"> <h2> Humidity info</h2></div>
+               <div class="boldDetail"> <span id="humidity"></span><span class="gray">%</span></div>
+
+                <div class="details">
+                    <ul>
+                        <!-- <li><b>Cloud pct = </b><span id="cloud_pct"></span></li> -->
+                        <li><b>Sunrise = </b><span id="sunrise"></span></li>
+                        <li><b>Sunset = </b><span id="sunset"></span></li>
+                        <li><b>Humidity = </b><span id="humidity2"></span></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="weather.js"></script>
+
+</html>
